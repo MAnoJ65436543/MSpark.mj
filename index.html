@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSpark</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #1c1c1c;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #000000;
+      padding: 1.5rem 2rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #ffcc00;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    section.hero {
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, #0044ff, #ffcc00);
+      color: #fff;
+      text-align: center;
+    }
+    section.hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    section.hero p {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #1c1c1c;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #333333;
+    }
+    section.container {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section.container h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+    .card {
+      margin-bottom: 2rem;
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .card p.description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+    .read-more {
+      color: #0044ff;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
+    footer {
+      background-color: #000000;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MSpark</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#blogs">Blog</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>The Layman’s Guide to Marketing That Actually Changes Lives</h1>
+    <p>Hey, it's Manoj — I stumbled into marketing with curiosity and stayed for the power it gives people. This site is my open notebook, where I break down marketing into relatable insights for students, creators, and future PMs. No jargon. No fluff. Just real ideas that help you grow.</p>
+    <a href="#case-studies" class="btn">Read My Work</a>
+  </section>
+
+  <section id="blogs" class="container">
+    <h2>Latest Blog</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1559027615-cd30855f7e29" alt="Marketing strategy meeting">
+      <h3>Marketing Made Simple: The Psychology Behind Great Ads</h3>
+      <p class="description">In today’s digital landscape, marketing is not just about reaching people—it’s about connecting with them deeply. When I first saw the Apple 'Think Different' ad, it sparked something in me. I realized how emotion drives memory and action. This article walks you through real-world psychology used by top marketers and how you can apply it too, with examples, case discussions, and interactive insights...</p>
+      <span class="read-more">Read More</span>
+    </div>
+  </section>
+
+  <section id="case-studies" class="container">
+    <h2>Case Study</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7" alt="Case Study Product Growth">
+      <h3>How I Grew a Local Fitness Brand by 400% in 60 Days</h3>
+      <p class="description">This is the story of a real gym business struggling to get leads. We began by auditing their existing funnel, built a 3-stage campaign with Instagram reels, referral vouchers, and a retention strategy for expired members. What followed was a 400% increase in active subscriptions, 3x referral traffic, and a clear market position in their neighborhood. I break down the AIDA model we used, the tools that worked (and failed), and how you can recreate this strategy for any small business today...</p>
+      <span class="read-more">Read More</span>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>My Projects</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603570416937-8e8d2c5b6764" alt="PM Project">
+      <h3>Redesigning a Food Delivery App for 10x Better Retention</h3>
+      <p class="description">In this UX project, I took an underperforming food delivery app and reimagined the onboarding and reordering flow. Using product thinking principles, I mapped the journey, ran a quick survey, created clickable prototypes in Figma, and shipped the concept in just 2 weeks. The result? 10x faster repeat orders and a visual design users loved. In this breakdown, I share the sketches, problems faced, user testing feedback, and more...</p>
+      <span class="read-more">Read More</span>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Get in Touch</h2>
+    <p>Let’s talk about products, growth, or cool ideas.</p>
+    <form>
+      <input type="text" placeholder="Name" required><br><br>
+      <input type="email" placeholder="Email" required><br><br>
+      <textarea placeholder="Message" rows="5" required></textarea><br><br>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <p style="margin-top:1.5rem;">You can also contact me directly:<br>
+    Email: <strong>manoj2001manu@gmail.com</strong><br>
+    Phone: <strong>+91 7483416223</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MSpark | Designed by Manoj | <a href="#">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
